@@ -159,8 +159,6 @@ canay_yellow
 
 ### 2)-8 img 관련 태그
 - src url : 웹사이트의 이미지의 주소를 저장하는 태그
-- iframe : 외부 url 링크의 페이지를 보여주기 위한 태그
-    - 설정된 url 로 가져와야한다.
 - virgil abloh 의 홈페이지 배경 가져오기
 
 ```
@@ -169,6 +167,9 @@ canay_yellow
 ```
 
 ![bg-canary-yellow](./images/bg-canary-yellow.jpg)
+
+- iframe : 외부 url 링크의 페이지를 보여주기 위한 태그
+- 설정된 url 로 가져와야한다.
 
 ```
 %%html
