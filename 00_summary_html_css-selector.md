@@ -146,7 +146,6 @@ python
 - data 3
 ```
 
-```
 ### 2)-7 a : 링크를 출력하는 태그
 - 출력된 이름을 누르면 해당 url 로 연결된다.
 ```
@@ -163,19 +162,21 @@ canay_yellow
 - iframe : 외부 url 링크의 페이지를 보여주기 위한 태그
     - 설정된 url 로 가져와야한다.
 - virgil abloh 의 홈페이지 배경 가져오기
+
 ```
 %%html
 <img style="width:400px;" src="https://d3uqg2ap1kpnl9.cloudfront.net/wp-content/uploads/2020/07/06103047/bg-canary-yellow.jpg">
 ```
+
 ![bg-canary-yellow](./images/bg-canary-yellow.jpg)
 
 ```
 %%html
 <iframe src="https://d3uqg2ap1kpnl9.cloudfront.net/wp-content/uploads/2020/07/06103047/bg-canary-yellow.jpg" width="100%" height="300x"></iframe>
 ```
+
 ![bg-canary-yellow_big](./images/bg-canary-yellow_big.jpg)
 
-```
 # 3. CSS Selector
 - HTML 의 Element 에 CSS 스타일을 적용시킬때, element 를 선택하기 위한 방법
 
