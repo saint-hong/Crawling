@@ -1,4 +1,4 @@
-# <HTML> 
+# HTML 
 
 ## 1) summary
 - Hyper Text Markup Language 의 약자
@@ -178,7 +178,7 @@ canay_yellow
 
 ![bg-canary-yellow_big](./images/bg-canary-yellow_big.jpg)
 
-# <CSS Selector>
+# CSS Selector
 - HTML 의 Element 에 CSS 스타일을 적용시킬때, element 를 선택하기 위한 방법
 
 ## 1) Element 를 선택하는 방법
