@@ -52,7 +52,7 @@ datas = json.loads(datas)
 
 ![vibe_json](./images/vibe_json.PNG)
 
-### 3) data search
+### 4) data search
 - 가수명, 앨범명, 랭킹순위 등 필요한 데이터가 dict 의 6 개 하위에 들어있다.
 ```
 basic_cate = datas["response"]["result"]["chart"]["items"]["tracks"]["track"][1]
@@ -60,8 +60,8 @@ basic_cate = datas["response"]["result"]["chart"]["items"]["tracks"]["track"][1]
 
 ![vibe_dict](./images/vibe_dict.PNG)
 
-```
-### 4) data parsing
+
+### 5) data parsing
 - 기본 카테고리를 사용하여, 랭킹, 아티스트명, 노래명, 앨범명, 앨범장르 데이터를 파싱
 - 아티스트명은 여러 아티스트가 함께 작업한 경우 dict 의 구조가 달라서 예외처리를 사용해야했다.
 ```
@@ -117,7 +117,6 @@ soup = BeautifulSoup(page, "html.parser")
 ```
 
 - 데이터를 잘 가져왔다. 서치하기 어려운 형태이다.
-
 ![vibe_bs4_1](./images/vibe_bs4_1.PNG)
 
 - find_all을 사용하여 특정 엘리먼트를 검색하니, 해당되는 데이터만 골라서 잘 나왔다.
@@ -126,14 +125,12 @@ soup.find_all("tracktitle")
 ```
 ![vibe_bs4_2](./images/vibe_bs4_2.PNG)
 
-
 - 필요한 부분만 떼어내기 위해 .string 을 함께 사용, 리스트컴프리핸션으로 list 데이터로 변환.
 ```
 tracktitle = [item.string for item in soup.find_all("tracktitle")]
 tracktitle[:20]
 ```
 ![vibe_bs4_3](./images/vibe_bs4_3.PNG)
-
 
 - 필요한 데이터에 일괄적용하고 데이터프레임으로 전환
 ```
